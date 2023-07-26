@@ -41,10 +41,14 @@
 @media only screen and (max-width:1300px){
     .Hero{
         &__title{
-            font-size: 1.8rem;
+            font-size: 1.2rem;
+            &__span{
+                margin-left: 50px;
+            }
         }
         &__p{
             font-size: 1rem;
+            text-align: center;
         }
         &__button{
             width: 45%;

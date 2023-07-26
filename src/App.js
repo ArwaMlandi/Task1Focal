@@ -12,7 +12,7 @@ import { useState } from 'react';
 function App() {
   const [title1]=useState("Fast Food");
   const [title2]=useState("Best Food");
-  const [title3]=useState("Delecios Food");
+  const [title3]=useState("Delecious Food");
 
   const [desc1]=useState("  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae a nemo voluptatum blanditiis ex! Sunt temporibus tenetur aspernatur quaerat perferendis quis error tempore nihil ipsam laudantium, quo eligendi culpa molestias.");
 

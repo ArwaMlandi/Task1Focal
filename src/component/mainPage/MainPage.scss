@@ -95,13 +95,15 @@
 }
 @media only screen and (max-width:1300px){
     .main__thir{
-        margin-left: 50px;
+        margin-left: 25px;
         width: 80%;
+        padding: 10px;
         &__title{
-            font-size: 0.8rem;
+            font-size: 0.4rem;
         }
         &__button{
             margin-left: 10px;
+            margin-right: 10px;
         }
     }
     .main__sec{
