@@ -1,0 +1,137 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    &__first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__p{
+            width: 45%;
+            flex-wrap: wrap;
+           
+        }
+    }
+
+    &__sec{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin:30px 0px 30px 0px;
+        
+       
+        &__s1{
+            display: flex;
+            flex-direction: row;
+            gap: 15rem;
+            margin-top: 20px;
+           
+            &__logo{
+                width: 25%;
+                border: 1px solid rgb(253, 245, 245);;
+                border-radius: 120px;
+                margin-left: 200px;
+            }
+            &__logo2{
+                width: 25%;
+                border: 1px solid rgb(253, 245, 245);;
+                border-radius: 120px;
+                margin-left: 70px;
+                margin-right: 325px;
+            }
+            &__container{
+                width: 30%;
+                &__title{
+                    margin-left: 135px;
+                }
+            }
+        }
+    
+    }
+
+
+
+
+
+    &__thir{
+        background-color:rgb(250, 207, 243);
+        width: 55%;
+        height: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(250, 207, 243);
+        border-radius: 6px;
+        margin-left: 380px;
+        &__title{
+            font-size: 1rem;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            &__span{
+                color: palevioletred;
+            }
+
+        }
+        &__button{
+            background-color: palevioletred;
+            color: white;
+            border: 1px solid palevioletred;
+            border-radius: 3px;
+            padding: 6px;
+            margin-left: 380px;
+            cursor: pointer;
+            &:hover{
+                background-color: white;
+            color: palevioletred;
+            }
+        }
+    }
+}
+.revers{
+    flex-direction: row-reverse;
+    gap: 4rem;
+}
+@media only screen and (max-width:1300px){
+    .main__thir{
+        margin-left: 50px;
+        width: 80%;
+        &__title{
+            font-size: 0.8rem;
+        }
+        &__button{
+            margin-left: 10px;
+        }
+    }
+    .main__sec{
+        width: 100%;
+        margin: 30px 0p 30px 0px;
+        &__s1{
+            
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 40px;
+            align-items: center;
+            &__logo{
+                width: 45%;
+                margin-left: 20px;
+            }
+            &__logo2{
+                width: 45%;
+                border: 1px solid rgb(253, 245, 245);;
+                border-radius: 120px;
+               margin-left: 0px;
+                margin-right: 10px;
+            }
+            &__container{
+                width: 50%;
+                margin-left: 35px;
+                justify-content: center;
+                &__title{
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+}

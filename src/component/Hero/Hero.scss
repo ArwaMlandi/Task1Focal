@@ -1,0 +1,54 @@
+.Hero{
+    background-color:rgb(253, 245, 245);
+    height: 450px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    font-size: 1.2rem;
+    position: relative;
+    
+    &__title{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        &__span{
+            margin-left: 100px;
+            color: palevioletred;
+        }
+    }
+    &__p{
+        margin: 25px;
+        color: gray;
+        font-weight: 600;
+    }
+    &__button{
+        padding: 15px;
+        width: 15%;
+        background-color: palevioletred;
+        color: white;
+        border: 1px solid palevioletred;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            color: palevioletred;
+        }
+
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .Hero{
+        &__title{
+            font-size: 1.8rem;
+        }
+        &__p{
+            font-size: 1rem;
+        }
+        &__button{
+            width: 45%;
+        }
+    }
+
+}

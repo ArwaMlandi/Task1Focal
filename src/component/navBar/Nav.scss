@@ -1,0 +1,114 @@
+.navbar{
+    background-color:rgb(253, 245, 245);
+   margin-bottom: 20px;
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 1;
+    position: fixed;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: inherit;
+        list-style: none;
+        padding: 0px 20px;
+        flex: 1;
+        &__logo{
+            color: rgb(247, 196, 204);
+            cursor: pointer;
+        }
+        &__brand{
+            margin-left: 7px;
+
+
+        }
+        &__ul{
+            display: flex;
+            list-style: none;
+            text-align: center;
+            z-index: 1;
+
+            &__item{
+                line-height: 40px;
+                text-decoration: none;
+                margin-right: 1.5rem;
+                font-size: 1rem;
+                &::after{
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 0;
+                    background: transparent;
+                    transition: all 0.8s ease;
+                }
+                &:hover::after{
+                    width: 100%;
+                    background:rgb(245, 93, 115);
+                }
+                &__link{
+                    text-decoration: none;
+                    color:black;
+                    font-weight: bold;
+                    cursor: pointer;
+                   
+                }
+            }
+
+        }
+        
+    }
+    
+}
+.nav-icon{
+    display: none;
+}
+.revers{
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width:768px){
+    .navbar__container__ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 80px;
+        left: -700px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background-color: azure;
+        color: rgb(247, 196, 204);
+        z-index: 1;
+        &.active{
+            background:rgb(247, 196, 204);
+            left: 0px;
+            opacity: 1;
+            color: rgb(247, 196, 204);
+        }
+        &__item{
+            
+            margin: 0px;
+            padding: 20px 0px;
+            &__link{
+                text-decoration: none;
+                color: azure;
+                z-index: 1;
+            }
+        }
+    }
+    .nav-icon{
+        display: block;
+        cursor: pointer;
+        color: var(--green-them-main-color);
+        padding-right: 20px;
+    }
+}
